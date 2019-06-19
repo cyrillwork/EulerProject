@@ -5,6 +5,7 @@
 #include "tasks/task3.h"
 #include "tasks/task4.h"
 #include "tasks/task5.h"
+#include "tasks/task6.h"
 #include "tasks/task9.h"
 #include "tasks/task10.h"
 
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
         //std::make_shared<Task2>(),
         //...
         //std::make_shared<Task9>()
-        std::make_shared<Task10>()
+        std::make_shared<Task6>()
     };
 
     for(const auto &iii: arrayTasks)

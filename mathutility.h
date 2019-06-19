@@ -24,6 +24,30 @@ bool isPrime(T n)
     return true;
 }
 
+template <typename ull = int long long>
+ull sum_pow1(int N)
+{
+    ull sum1 = 0;
+    for(int i=1; i<=N; ++i)
+    {
+        sum1 += i*i;
+    }
+    return sum1;
+}
+
+template <typename ull = int long long>
+ull sum_pow2(int N)
+{
+    ull sum1 = 0;
+
+    for(int i=1; i<=N; ++i)
+    {
+        sum1 += i;
+    }
+    return sum1*sum1;
+}
+
+
 template <typename T>
 bool isPalendrom(T number)
 {
