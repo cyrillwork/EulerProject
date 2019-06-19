@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <chrono>
 
+
 template<typename T>
 bool isEven(T Number)
 {
@@ -51,9 +52,9 @@ public:
 
     friend std::ostream& operator << (std::ostream& s, const Profiler &p)
     {
-        //s.width(12);
-        //s.precision(10);
-        s << p.time_span.count() << " sec";
+        s.width(12);
+        s.precision(7);
+        s << std::fixed << p.time_span.count() << " sec";
         return s;
     }
 

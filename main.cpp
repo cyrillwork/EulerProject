@@ -6,6 +6,7 @@
 #include "tasks/task4.h"
 #include "tasks/task5.h"
 #include "tasks/task9.h"
+#include "tasks/task10.h"
 
 #include <vector>
 #include <memory>
@@ -16,15 +17,14 @@ int main(int argc, char *argv[])
 
     std::vector<std::shared_ptr<ITask>> arrayTasks =
     {
-        std::make_shared<Task5>()
         //std::make_shared<Task1>(),
         //std::make_shared<Task2>(),
-        //std::make_shared<Task3>(),
-        //std::make_shared<Task4>(),
+        //...
         //std::make_shared<Task9>()
+        std::make_shared<Task10>()
     };
 
-    for(auto &iii: arrayTasks)
+    for(const auto &iii: arrayTasks)
     {
         std::cout << iii->getDescriptionEng() << std::endl;
         iii->ProcessProfiler();

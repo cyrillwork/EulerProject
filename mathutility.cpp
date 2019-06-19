@@ -7,7 +7,10 @@ Profiler::~Profiler()
 
     if(isPrintEnd)
     {
-        std::cout << this->time_span.count() << std::endl;
+        auto number = time_span.count();
+        std::cout.width(12);    //ширина поля 12 символов
+        std::cout.precision(6); //точность 6 цифры
+        std::cout << std::fixed << number << std::endl;
     }
 }
 
