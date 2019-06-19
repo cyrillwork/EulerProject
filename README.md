@@ -1,4 +1,4 @@
 # EulerProject
 Euler project tasks
 
-Some tasks has OpenMP calcilations.
+Some tasks has OpenMP calculation.
