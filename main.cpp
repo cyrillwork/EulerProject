@@ -7,6 +7,7 @@
 #include "tasks/task5.h"
 #include "tasks/task6.h"
 #include "tasks/task7.h"
+#include "tasks/task8.h"
 #include "tasks/task9.h"
 #include "tasks/task10.h"
 
@@ -19,11 +20,17 @@ int main(int argc, char *argv[])
 
     std::vector<std::shared_ptr<ITask>> arrayTasks =
     {
-        //std::make_shared<Task1>(),
-        //std::make_shared<Task2>(),
-        //...
-        //std::make_shared<Task9>()
-        std::make_shared<Task7>()
+        std::make_shared<Task1>(),
+        std::make_shared<Task2>(),
+        std::make_shared<Task2>(),
+        std::make_shared<Task3>(),
+        std::make_shared<Task4>(),
+        std::make_shared<Task5>(),
+        std::make_shared<Task6>(),
+        std::make_shared<Task7>(),
+        std::make_shared<Task8>(),
+        std::make_shared<Task9>(),
+        std::make_shared<Task10>()
     };
 
     for(const auto &iii: arrayTasks)
