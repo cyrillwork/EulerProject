@@ -30,7 +30,8 @@ SOURCES += \
     tasks/task5.cpp \
     tasks/task6.cpp \
     tasks/task7.cpp \
-    tasks/task8.cpp
+    tasks/task8.cpp \
+    tasks/task11.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -49,4 +50,5 @@ HEADERS += \
     tasks/task5.h \
     tasks/task6.h \
     tasks/task7.h \
-    tasks/task8.h
+    tasks/task8.h \
+    tasks/task11.h
