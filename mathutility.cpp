@@ -24,3 +24,4 @@ void Profiler::stop()
     time_span = duration_cast<duration<double>>(high_resolution_clock::now() - start_point);
 }
 
+

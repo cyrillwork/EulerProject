@@ -58,6 +58,37 @@ bool isPalendrom(T number)
     return str1 == str2;
 }
 
+template <typename T>
+T getTriangularNumber(T number)
+{
+    return (number*(number + 1))/2;
+}
+
+template<typename T>
+T divisors(T x)
+{
+    T limit = x;
+    T numberOfDivisors = 0;
+
+    if (x == 1) return 1;
+
+    for (T i = 1; i < limit; ++i)
+    {
+        if (x % i == 0)
+        {
+            limit = x / i;
+            if (limit != i)
+            {
+                numberOfDivisors++;
+            }
+            numberOfDivisors++;
+        }
+    }
+    return numberOfDivisors;
+}
+
+
+
 using namespace std::chrono;
 
 class Profiler
