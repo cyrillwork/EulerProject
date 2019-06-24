@@ -1,16 +1,22 @@
 #include "task11.h"
-#include <sstream>
+#include "stringtokenizer.h"
+
+//#include <sstream>
 
 Task11::Task11()
 {
-    std::istringstream sss(strMatrex);
+    //std::istringstream sss(strMatrex);
+    StringTokenizer token(strMatrex);
 
     ResType i = 0;
     ResType j = 0;
 
-    while(!sss.eof())
+    //while(!sss.eof())
+    while(token.hasMoreTokens())
     {
-        sss >> Matrex[j][i];
+        //sss >> Matrex[j][i];
+
+        Matrex[j][i] = std::atoi(token.nextToken().c_str());
 
         ++i;
         if(i == N)

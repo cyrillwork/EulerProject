@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 //        std::make_shared<Task9>(),
 //        std::make_shared<Task10>()
 
-        std::make_shared<Task12>()
+        std::make_shared<Task11>()
 
     };
 
