@@ -17,6 +17,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+#include($${_PRO_FILE_PWD_}/public/bignumber/bignumber.pri)
+
+INCLUDEPATH += $${_PRO_FILE_PWD_}/depends/BigNumber
+
 SOURCES += \
         main.cpp \
     mathutility.cpp \
@@ -33,7 +37,8 @@ SOURCES += \
     tasks/task8.cpp \
     tasks/task11.cpp \
     tasks/task12.cpp \
-    stringtokenizer.cpp
+    stringtokenizer.cpp \
+    tasks/task13.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -55,4 +60,7 @@ HEADERS += \
     tasks/task8.h \
     tasks/task11.h \
     tasks/task12.h \
-    stringtokenizer.h
+    stringtokenizer.h \
+    tasks/task13.h
+
+LIBS += depends/BigNumber/bignumber.o

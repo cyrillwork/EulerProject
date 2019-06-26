@@ -12,9 +12,11 @@
 #include "tasks/task10.h"
 #include "tasks/task11.h"
 #include "tasks/task12.h"
+#include "tasks/task13.h"
 
 #include <vector>
 #include <memory>
+
 
 int main(int argc, char *argv[])
 {
@@ -34,7 +36,7 @@ int main(int argc, char *argv[])
 //        std::make_shared<Task9>(),
 //        std::make_shared<Task10>()
 
-        std::make_shared<Task11>()
+        std::make_shared<Task13>()
 
     };
 
@@ -42,7 +44,10 @@ int main(int argc, char *argv[])
     {
         std::cout << iii->getDescriptionEng() << std::endl;
         iii->ProcessProfiler();
-        std::cout << "result = " << iii->getResult() << std::endl << std::endl;
+        if(iii->getResult() > 0)
+        {
+            std::cout << "result = " << iii->getResult() << std::endl << std::endl;
+        }
     }
 
     return 0;
