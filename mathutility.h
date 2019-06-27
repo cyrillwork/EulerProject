@@ -87,6 +87,25 @@ T divisors(T x)
     return numberOfDivisors;
 }
 
+template <typename T>
+void funcCollatz(T number, T &countChain)
+{
+    ++countChain;
+    if(number == 1)
+    {
+        return;
+    }
+
+    if(isEven(number))
+    {
+        funcCollatz(number/2, countChain);
+    }
+    else
+    {
+        funcCollatz(3*number + 1, countChain);
+    }
+}
+
 
 
 using namespace std::chrono;

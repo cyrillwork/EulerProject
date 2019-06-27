@@ -38,7 +38,8 @@ SOURCES += \
     tasks/task11.cpp \
     tasks/task12.cpp \
     stringtokenizer.cpp \
-    tasks/task13.cpp
+    tasks/task13.cpp \
+    tasks/task14.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -61,6 +62,7 @@ HEADERS += \
     tasks/task11.h \
     tasks/task12.h \
     stringtokenizer.h \
-    tasks/task13.h
+    tasks/task13.h \
+    tasks/task14.h
 
 LIBS += depends/BigNumber/bignumber.o
