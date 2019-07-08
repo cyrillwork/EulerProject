@@ -106,6 +106,12 @@ void funcCollatz(T number, T &countChain)
     }
 }
 
+template<typename T>
+T factorial(T n)
+{
+    return (n == 0)?(1):(n * factorial(n - 1));
+}
+
 
 
 using namespace std::chrono;
