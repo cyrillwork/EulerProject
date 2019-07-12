@@ -112,6 +112,10 @@ T factorial(T n)
     return (n == 0)?(1):(n * factorial(n - 1));
 }
 
+inline int charToInt(char ch)
+{
+    return (int)ch - (int)48;
+}
 
 
 using namespace std::chrono;

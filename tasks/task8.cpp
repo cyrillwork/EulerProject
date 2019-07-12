@@ -2,11 +2,6 @@
 
 #include <cstring>
 
-inline int charToInt(char ch)
-{
-    return (int)ch - (int)48;
-}
-
 ITask::ResType Task8::Process()
 {
     const int N = 13;
