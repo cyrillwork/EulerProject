@@ -16,6 +16,7 @@
 #include "tasks/task14.h"
 #include "tasks/task15.h"
 #include "tasks/task16.h"
+#include "tasks/task17.h"
 
 #include <vector>
 #include <memory>
@@ -39,7 +40,7 @@ int main(int argc, char *argv[])
 //        std::make_shared<Task9>(),
 //        std::make_shared<Task10>()
 
-        std::make_shared<Task16>()
+        std::make_shared<Task17>()
 
     };
 

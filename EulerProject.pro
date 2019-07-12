@@ -41,7 +41,8 @@ SOURCES += \
     tasks/task13.cpp \
     tasks/task14.cpp \
     tasks/task15.cpp \
-    tasks/task16.cpp
+    tasks/task16.cpp \
+    tasks/task17.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -67,6 +68,7 @@ HEADERS += \
     tasks/task13.h \
     tasks/task14.h \
     tasks/task15.h \
-    tasks/task16.h
+    tasks/task16.h \
+    tasks/task17.h
 
 LIBS += depends/BigNumber/bignumber.o
